@@ -1,8 +1,7 @@
 .logo {
     width: 320px;
     height: auto;
-    color: #DCF763;
-
+    fill: #DCF763;
 }
 
 .navHeader {
@@ -12,8 +11,36 @@
     
 }
 
-.Navegador .a {
+.Navegador {
     display: flex;
-    align-content: center;
+    align-items: center;
+}
 
+.perfilBuscador {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    margin: 0px 15px;
+    color: #F1F2EE;
+    font-family: sans-serif;
+}
+
+.fotoPerfil {
+    width: 60px;
+    height: auto;
+}
+.lupa {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        fill: #DCF763;
+}
+
+.lupa:hover {
+    fill:#F1F2EE;
 }

@@ -1,7 +1,11 @@
-import React from 'react'
+import "./catalogo.css";
 
-export const catalogo = () => {
+export const Catalogo = () => {
   return (
-    <div>catalogo</div>
+    <>
+
+
+    
+    </>
   )
 }

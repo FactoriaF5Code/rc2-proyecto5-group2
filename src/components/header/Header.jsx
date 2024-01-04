@@ -1,20 +1,26 @@
 import "./header.css";
-import logotipo from "../../assets/logo_reactflix.svg";
+import { Logo } from "../logo/logo";
+import { Lupa } from "../../assets/lupa"
+import fotoPerfil from "../../assets/imagen_perfil.png"
 
 export const Header = () => {
   return (
     <nav className="navHeader">
       <div className="Navegador">
-        <img src={logotipo} alt="logotipo" className="logo" />
-        <a href="">Inicio</a>
-        <a href="">Series Tv</a>
-        <a href="">Peliculas</a>
-        <a href="">Infantil</a>
-        <a href="">Mi lista</a>
+        <div className="logo">
+          <Logo />
+        </div>
+        <a href="">INICIO</a>
+        <a href="">SERIES TV</a>
+        <a href="">PELICULAS</a>
+        <a href="">INFANTIL</a>
+        <a href="">MI LISTA</a>
       </div>
       <div className="perfilBuscador">
-        <button>Lupa</button>
-        <img src="" alt="Foto de perfil" className="fotoPerfil" />
+        <button className="lupa">
+          <Lupa />
+        </button>
+        <img src={fotoPerfil} alt="Foto de perfil" className="fotoPerfil" />
       </div>
     </nav>
   );
