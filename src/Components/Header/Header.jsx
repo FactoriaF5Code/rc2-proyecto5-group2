@@ -1,12 +1,9 @@
-import "./Header.css";
-import Logo from './Logo';
+import './Header.css';
 import Menu from './Menu';
-//import Buttons from './Button';
 
 const NavHeader= () => {
   return (
     <nav className="header">
-      <Logo />
       <Menu />
 
     </nav>
