@@ -1,0 +1,13 @@
+
+.menu {
+    li{
+        font-family: AppleSystemUIFont;
+        margin-left: auto;
+        flex-shrink: 1;
+        color: #FFF;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
