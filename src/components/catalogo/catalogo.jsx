@@ -8,8 +8,8 @@ export const Catalogo = () => {
     headers: {
       accept: "application/json",
       Authorization:
-        'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjNDY2ZWY3YWZiYTUwOGQzODU0ZjQ0NDZlYTVhMjViYSIsInN1YiI6IjY1OTNlYzcxYTU4OTAyNzE3Zjk3MzRlZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.C3xeQg4rDbJfstLzXLwhnq8FV7HE9b_sJYPbDeAGDTA'
-    }
+        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjNDY2ZWY3YWZiYTUwOGQzODU0ZjQ0NDZlYTVhMjViYSIsInN1YiI6IjY1OTNlYzcxYTU4OTAyNzE3Zjk3MzRlZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.C3xeQg4rDbJfstLzXLwhnq8FV7HE9b_sJYPbDeAGDTA",
+    },
   };
 
   useEffect(() => {
@@ -33,6 +33,13 @@ export const Catalogo = () => {
             src={`https://image.tmdb.org/t/p/original/${pelicula.poster_path}`}
             alt={`Portada de la película ${index + 1}`}
           />
+          <a href="" className="infoPeli">
+            <div className="ver">
+              <p className="puntuacion">{pelicula.vote_average}</p>
+            </div>
+            <h2 className="titulo">{pelicula.title}</h2>
+            <p className="descripcion">{pelicula.overview}</p>
+          </a>
         </article>
       ))}
     </section>
