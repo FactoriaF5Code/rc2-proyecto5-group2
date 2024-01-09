@@ -23,14 +23,14 @@ export const Catalogo = () => {
         setData(Array.isArray(movies.results) ? movies.results : []);
       })
       .catch((error) => console.error("Error fetching movies:", error));
-  }, []);
+  });
 
   return (
     <section>
       {data.map((pelicula, index) => (
         <article key={index} className="pelicula">
           <img
-            src={`https://image.tmdb.org/t/p/original/${pelicula.poster_path}`}
+            src={`https://image.tmdb.org/t/p/w500/${pelicula.poster_path}`}
             alt={`Portada de la película ${index + 1}`}
           />
           <a href="" className="infoPeli">

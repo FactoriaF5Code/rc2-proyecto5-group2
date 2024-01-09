@@ -1,0 +1,30 @@
+.carousel-container {
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.slick-slider {
+  height: 100%;
+  width: 100%;
+}
+
+img.carousel-image {
+  height: 350px;
+  width: 100%;
+  object-fit: fill;
+  top: 0;
+}
+.slick-next {
+  right: 15px;
+}
+.slick-prev {
+  left: 15px;
+  z-index: 5;
+}
+.slick-prev:before {
+  color: #dcf763;
+}
+.slick-next:before {
+  color: #dcf763;
+}
