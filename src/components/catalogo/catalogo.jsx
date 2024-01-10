@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react";
 import "./catalogo.css";
 
+function truncate(text, maxLength) {
+  return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
+}
+
 export const Catalogo = () => {
   const [data, setData] = useState([]);
   const options = {
@@ -34,11 +38,11 @@ export const Catalogo = () => {
             alt={`Portada de la película ${index + 1}`}
           />
           <a href="" className="infoPeli">
-            <div className="ver">
-              <p className="puntuacion">{pelicula.vote_average}</p>
+            <div className="infoPrincipal">
+              <h2 className="titulo">{pelicula.title}</h2>
+              <div className="puntuacion">{pelicula.vote_average}</div>
             </div>
-            <h2 className="titulo">{pelicula.title}</h2>
-            <p className="descripcion">{pelicula.overview}</p>
+            <p className="descripcion">{truncate(pelicula.overview, 200)}</p>
           </a>
         </article>
       ))}

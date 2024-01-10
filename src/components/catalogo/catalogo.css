@@ -19,6 +19,13 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+}
+
+.infoPrincipal {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 }
 
 .infoPeli {
@@ -35,31 +42,41 @@ section {
     opacity: 0;
     transition: opacity 0.4s ease;
     overflow: hidden;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
 }
 
-.pelicula:hover .infoPeli{
+.pelicula:hover .infoPeli {
     visibility: visible;
     opacity: 1;
 }
 
 .titulo {
-    font-size: 15px;
+    font-size: 13px;
+    font-family: sans-serif;
     color: white;
+    margin-bottom: 10px;
+    width: 70%;
 }
 
 .puntuacion {
-    background-color: #93959C;
-    color: white;
+    background-color: #DCF763;
+    color: #848C8E;
     width: 30px;
     height: 30px;
     font-size: 15px;
-    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .descripcion {
-    font-size: 10px;    
+    font-size: 10px;
+    font-weight: lighter;
     color: white;
+    margin-top: 10px;
 }
