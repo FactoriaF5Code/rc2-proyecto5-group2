@@ -39,7 +39,8 @@ export const SliderComponent = () => {
     <div className="carousel-container">
       <Slider {...settings}>
         {data.map((movie, index) => (
-          <div key={index}>
+          <div className="cajaSlider" key={index}>
+            <h1 className="tituloSlider">{movie.title}</h1>
             <img
               src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
               alt={`Portada de la película ${index + 1}`}

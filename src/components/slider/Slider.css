@@ -1,6 +1,5 @@
 .carousel-container {
   width: 100%;
-
   overflow: hidden;
 }
 
@@ -10,10 +9,24 @@
 }
 
 img.carousel-image {
-  height: 350px;
+  height: 1000px;
   width: 100%;
   object-fit: fill;
   top: 0;
+}
+
+.cajaSlider {
+  height: 450px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.tituloSlider {
+  position: absolute;
+  top: 75%;
+  margin-left: 40px;
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .slick-next {
   right: 15px;

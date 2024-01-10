@@ -1,82 +1,85 @@
 .pelicula {
-    width: 180px;
-    height: 250px;
-    margin: 30px;
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
+  width: 180px;
+  height: 250px;
+  margin: 30px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
 }
 
 .pelicula img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .infoPrincipal {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
 
 .infoPeli {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 10px;
-    background-color: rgba(20, 20, 38, 0.7);
-    position: absolute;
-    color: white;
-    top: 0;
-    box-sizing: border-box;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    overflow: hidden;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(20, 20, 38, 0.7);
+  position: absolute;
+  color: white;
+  top: 0;
+  box-sizing: border-box;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  overflow: hidden;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .pelicula:hover .infoPeli {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
+.pelicula:hover {
+  transform: scale(1.1);
+}
 .titulo {
-    font-size: 13px;
-    font-family: sans-serif;
-    color: white;
-    margin-bottom: 10px;
-    width: 70%;
+  font-size: 13px;
+  font-family: sans-serif;
+  color: white;
+  margin-bottom: 10px;
+  width: 70%;
 }
 
 .puntuacion {
-    background-color: #DCF763;
-    color: #848C8E;
-    width: 30px;
-    height: 30px;
-    font-size: 15px;
-    font-family: sans-serif;
-    font-weight: bold;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #dcf763;
+  color: #848c8e;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .descripcion {
-    font-size: 10px;
-    font-weight: lighter;
-    color: white;
-    margin-top: 10px;
+  font-size: 10px;
+  font-weight: lighter;
+  color: white;
+  margin-top: 10px;
 }

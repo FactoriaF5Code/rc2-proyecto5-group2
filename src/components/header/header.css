@@ -1,56 +1,54 @@
 .logo {
-    width: 200px;
-    height: auto;
-    fill: #DCF763;
+  width: 200px;
+  height: auto;
+  fill: #dcf763;
+  margin-right: 20px;
 }
-
 .navHeader {
-    display: flex;
-    align-items: row;
-    justify-content: space-between;
-    margin: 20px;
+  display: flex;
+  align-items: row;
+  justify-content: space-between;
+  margin: 20px;
 }
 
 .Navegador {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .perfilBuscador {
-    display: flex;
-    align-items: center;
-    
+  display: flex;
+  align-items: center;
 }
 
 .enlaces a {
-    text-decoration: none;
-    margin: 0px 15px;
-    color: #F1F2EE;
-    font-family: sans-serif;
-    letter-spacing: 2px;
-    font-size: 12px;
+  text-decoration: none;
+  margin: 0px 15px;
+  color: #f1f2ee;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-size: 12px;
 }
 
-.enlaces a:hover{
-    color: #DCF763;
+.enlaces a:hover {
+  color: #dcf763;
 }
 
 .fotoPerfil {
-    width: 60px;
-    height: auto;
-    margin-left: 20px;
+  width: 60px;
+  height: auto;
+  margin-left: 20px;
 }
 .lupa {
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        border: none;
-        background-color: transparent;
-        fill: #DCF763;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  fill: #dcf763;
 }
 
 .lupa:hover {
-    fill:#F1F2EE;
+  fill: #f1f2ee;
 }

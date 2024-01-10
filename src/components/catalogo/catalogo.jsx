@@ -42,7 +42,7 @@ export const Catalogo = () => {
               <h2 className="titulo">{pelicula.title}</h2>
               <div className="puntuacion">{pelicula.vote_average}</div>
             </div>
-            <p className="descripcion">{truncate(pelicula.overview, 200)}</p>
+            <p className="descripcion">{truncate(pelicula.overview, 400)}</p>
           </a>
         </article>
       ))}
