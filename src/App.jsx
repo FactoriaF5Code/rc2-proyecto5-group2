@@ -7,11 +7,13 @@ import { SliderComponent } from "./components/slider/Slider";
 import { Footer } from "./components/footer/Footer";
 
 import { Precarga } from "./Precarga";
+import { Catalogo } from "./components/catalogo/catalogo";
 
 const PaginaInicio = () => (
   <>
     <Header />
     <SliderComponent />
+    <Catalogo url="https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=es-ES&page=1&sort_by=popularity.desc&with_genres=12" />
     <Footer />
   </>
 );

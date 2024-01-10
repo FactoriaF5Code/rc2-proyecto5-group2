@@ -1,11 +1,23 @@
 import { useEffect, useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./catalogo.css";
+
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  arrows: true,
+};
 
 function truncate(text, maxLength) {
   return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
 }
 
-export const Catalogo = () => {
+export const Catalogo = ({ url }) => {
   const [data, setData] = useState([]);
   const options = {
     method: "GET",
@@ -17,10 +29,7 @@ export const Catalogo = () => {
   };
 
   useEffect(() => {
-    fetch(
-      "https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=es-ES&page=1&sort_by=popularity.desc&with_genres=12",
-      options
-    )
+    fetch(url, options)
       .then((response) => response.json())
       .then((movies) => {
         console.log("Movies from API:", movies);
@@ -30,7 +39,7 @@ export const Catalogo = () => {
   });
 
   return (
-    <section>
+    <Slider {...settings}>
       {data.map((pelicula, index) => (
         <article key={index} className="pelicula">
           <img
@@ -46,6 +55,6 @@ export const Catalogo = () => {
           </a>
         </article>
       ))}
-    </section>
+    </Slider>
   );
 };
