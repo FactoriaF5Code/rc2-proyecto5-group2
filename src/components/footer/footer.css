@@ -1,11 +1,18 @@
-.Footer {
+.footer {
   background-color: #bfb7b6;
   margin: auto;
   padding: 15px;
 }
 
-a {
+.footer a {
   text-decoration: none;
   margin: 0px 15px;
-  
+  color: #F1F2EE;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.footer a:hover{
+  color: #848C8E;
 }

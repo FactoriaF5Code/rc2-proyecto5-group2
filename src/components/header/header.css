@@ -1,5 +1,5 @@
 .logo {
-    width: 320px;
+    width: 200px;
     height: auto;
     fill: #DCF763;
 }
@@ -9,12 +9,13 @@
     align-items: row;
     justify-content: space-between;
     margin: 20px;
-    
 }
 
 .Navegador {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 60%;
 }
 
 .perfilBuscador {
@@ -23,11 +24,17 @@
     
 }
 
-a {
+.enlaces a {
     text-decoration: none;
     margin: 0px 15px;
     color: #F1F2EE;
     font-family: sans-serif;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.enlaces a:hover{
+    color: #DCF763;
 }
 
 .fotoPerfil {

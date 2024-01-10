@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './Precarga.css';
 
 import { Logo } from "./components/logo/logo";
-import fondoCatalogo from "./assets/fondo_catalogo.jpeg";
+import fondoCatalogo from "./assets/fondo_precarga.jpeg";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -32,8 +32,8 @@ const Login = () => {
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Tu contraseña"
         />
-        <a href="">¿Olvidaste tu contraseña?</a>
-        <button type="button" onClick={handleLogin} className="boton">
+        <a href="" className="olvido">¿Olvidaste tu contraseña?</a>
+        <button type="button" onClick={handleLogin} className="botonIniciar">
           Iniciar sesión
         </button>
       </form>
@@ -44,8 +44,8 @@ const Login = () => {
 export const Precarga = () => {
   return (
     <div className="inicio">
-        <div className='header'>
-            <img src={Logo} alt="Logotipo" className="logo" />
+        <div className='logoPrecarga'>
+          <Logo className="logo" />
         </div>
         <img src={fondoCatalogo} alt="Imagen de fondo" className="fondoCatalogo" />      
         <Login />
