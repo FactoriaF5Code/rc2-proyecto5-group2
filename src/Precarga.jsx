@@ -1,18 +1,13 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // Importa Link desde react-router-dom
 import './Precarga.css';
 
 import { Logo } from "./components/logo/logo";
 import fondoCatalogo from "./assets/fondo_precarga.jpeg";
 
 const Login = () => {
-  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
-  const handleLogin = () => {
-    navigate('/inicio');
-  };
 
   return (
     <section className="login">
@@ -33,9 +28,9 @@ const Login = () => {
           placeholder="Tu contraseña"
         />
         <a href="" className="olvido">¿Olvidaste tu contraseña?</a>
-        <button type="button" onClick={handleLogin} className="botonIniciar">
+        <Link to="/inicio" className="botonIniciar">
           Iniciar sesión
-        </button>
+        </Link>
       </form>
     </section>
   );
@@ -44,11 +39,11 @@ const Login = () => {
 export const Precarga = () => {
   return (
     <div className="inicio">
-        <div className='logoPrecarga'>
-          <Logo className="logo" />
-        </div>
-        <img src={fondoCatalogo} alt="Imagen de fondo" className="fondoCatalogo" />      
-        <Login />
+      <div className='logoPrecarga'>
+        <Logo className="logo" />
+      </div>
+      <img src={fondoCatalogo} alt="Imagen de fondo" className="fondoCatalogo" />
+      <Login />
     </div>
   );
 };

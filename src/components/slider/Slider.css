@@ -9,7 +9,6 @@
 }
 
 img.carousel-image {
-  height: 1000px;
   width: 100%;
   object-fit: fill;
   top: 0;
@@ -19,25 +18,75 @@ img.carousel-image {
   height: 450px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.tituloSlider {
+
+.infoSlider{
   position: absolute;
-  top: 75%;
-  margin-left: 40px;
+  top: 50%;
+  margin-left: 70px;
+}
+
+.tituloSlider {
+  margin-bottom: 15px;
   font-family: sans-serif;
   color: #fff;
   font-size: 50px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+.descripcionSlider {
+  font-size: 17px;
+  font-weight: normal;
+  width: 40%;
+  margin-bottom: 15px;
+}
+
+.verSlider{
+  width: 200px;
+  height: 40px;
+  margin: 10px 0;
+  padding: 8px;
+  background-color: #848C8E;
+  color: #DCF763;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 17px;
+  font-family: sans-serif;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verSlider:hover {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25%, 75% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+
 .slick-next {
   right: 15px;
 }
+
 .slick-prev {
   left: 15px;
   z-index: 5;
 }
-.slick-prev:before {
+
+.slick-prev:before, .slick-next:before {
   color: #dcf763;
+  font-size: 30px;
 }
-.slick-next:before {
-  color: #dcf763;
-}
+

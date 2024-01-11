@@ -1,4 +1,7 @@
 import "./header.css";
+
+import { Link } from "react-router-dom";
+
 import { Logo } from "../logo/logo";
 import { Lupa } from "../../assets/lupa";
 import fotoPerfil from "../../assets/imagen_perfil.png";
@@ -11,11 +14,11 @@ export const Header = () => {
           <Logo />
         </div>
         <div className="enlaces">
-          <a href="">INICIO</a>
-          <a href="">SERIES TV</a>
-          <a href="">PELICULAS</a>
-          <a href="">INFANTIL</a>
-          <a href="">MI LISTA</a>
+          <Link to="/inicio">INICIO</Link>
+          <Link to="">SERIES TV</Link>
+          <Link to="/peliculas">PELICULAS</Link>
+          <Link to="">INFANTIL</Link>
+          <Link to="">MI LISTA</Link>
         </div>
       </div>
       <div className="perfilBuscador">
@@ -24,6 +27,8 @@ export const Header = () => {
         </button>
         <img src={fotoPerfil} alt="Foto de perfil" className="fotoPerfil" />
       </div>
+
+      
     </nav>
   );
 };

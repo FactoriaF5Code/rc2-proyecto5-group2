@@ -70,14 +70,19 @@ input::placeholder {
     width: 150px;
     height: 40px;
     margin: 10px 0;
-    padding: 10px;
+    padding: 8px;
     background-color: #848C8E;
     color: #DCF763;
     border: none;
     cursor: pointer;
     border-radius: 20px;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 17px;
+    font-family: sans-serif;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .olvido {
