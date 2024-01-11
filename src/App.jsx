@@ -13,14 +13,17 @@ const PaginaInicio = () => (
   <>
     <Header />
     <SliderComponent />
-    <SliderCategoriaComponent 
-    config={{title: "AÑADIDAS RECIENTEMENTE"}}
+    <SliderCategoriaComponent
+      title="Peliculas Infantil"
+      url="https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=16" 
     />
-    <SliderCategoriaComponent 
-    config={{title: "DESTACADAS"}}
+    <SliderCategoriaComponent
+      title="Peliculas Western"
+      url="https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=37" 
     />
-    <SliderCategoriaComponent 
-    config={{title: "TOP MEJORES PELICULAS 2023"}}
+    <SliderCategoriaComponent
+      title="Peliculas de Terror"
+      url="https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=27" 
     />
     <Footer />
   </>

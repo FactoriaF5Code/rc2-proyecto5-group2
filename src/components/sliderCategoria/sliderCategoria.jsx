@@ -13,7 +13,7 @@ const sliderCategoriaSettings = {
   arrows: true,
 };
 
-export const SliderCategoriaComponent = ({config}) => {
+export const SliderCategoriaComponent = ({url, title}) => {
   const [data, setData] = useState([]);
 
   const options = {
@@ -26,10 +26,7 @@ export const SliderCategoriaComponent = ({config}) => {
   };
 
   useEffect(() => {
-    fetch(
-      "https://api.themoviedb.org/3/trending/movie/day?language=en-US",
-      options
-    )
+    fetch( url, options )
       .then((response) => response.json())
       .then((movies) => {
         console.log("Movies from API:", movies);
@@ -40,7 +37,7 @@ export const SliderCategoriaComponent = ({config}) => {
 
   return (
     <div className="sliderCategoriaContainer">
-      <h1 className="categoriaPelicula">{config.title}</h1>
+      <h1 className="categoriaPelicula">{title}</h1>
       <Slider {...sliderCategoriaSettings}>
         {data.map((movie, index) => (
           <div className="sliderCategoriaCaja" key={index}>
